@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite Boilerplate Project
 
 This template provides a minimal setup to get React working in Vite with automatic linting rules.
 
@@ -6,7 +6,7 @@ This project uses [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-r
 
 ### Linting configuration
 
-This project implements strict linting for TypeScript and SCSS files using [ESlint](https://eslint.org) & [StyleLint](https://stylelint.io/)
+This project implements strict linting for TypeScript and SCSS files using [ESlint](https://eslint.org) & [StyleLint](https://stylelint.io/).
 
 If you are using VSCode, linting will be applied automatically when you save a file to ensure correct indentation/formatting/etc is automatically applied.
 
