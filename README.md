@@ -1,30 +1,27 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup to get React working in Vite with automatic linting rules.
 
-Currently, two official plugins are available:
+This project uses [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) which uses [Babel](https://babeljs.io/) for Fast Refresh
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Linting configuration
 
-## Expanding the ESLint configuration
+This project implements strict linting for TypeScript and SCSS files using [ESlint](https://eslint.org) & [StyleLint](https://stylelint.io/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+If you are using VSCode, linting will be applied automatically when you save a file to ensure correct indentation/formatting/etc is automatically applied.
 
-- Configure the top-level `parserOptions` property like this:
+ESLint & StyleLint VSCode extensions should be enabled for the best developer experience.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Running locally
+
+```
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Building for production
+
+```
+npm run build
+```
+
+Output files will be placed in ```/dist``` folder.
