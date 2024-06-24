@@ -1,0 +1,40 @@
+@import '../../assets/styles/variables';
+
+.navbar {
+  z-index: 1;
+}
+
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  :hover {
+    color: $white;
+  }
+}
+
+/* Hide the caret down arrow icon on small screens */
+@media (width <= 768px) {
+  .navbar .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  .dropdown-menu {
+    position: absolute !important;
+  }
+
+  .dropdown-item:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+.nav-user-logo {
+  width: 32px;
+  height: 32px;
+}

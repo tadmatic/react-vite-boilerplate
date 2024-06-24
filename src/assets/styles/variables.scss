@@ -1,0 +1,14 @@
+// Import Bootstrap functions
+@import 'bootstrap/scss/functions';
+
+// Override default variables
+// Font
+$font-size-base: 0.95rem;
+$font-family-base: 'Roboto';
+
+// Colors
+$primary: #89bdee;
+$dark: #354e6b;
+
+// Import Bootstrap variables
+@import 'bootstrap/scss/variables';

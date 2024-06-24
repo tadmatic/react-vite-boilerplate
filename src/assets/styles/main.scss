@@ -1,2 +1,11 @@
-@import 'base';
-@import 'app';
+// Import Roboto font
+@import 'typeface-roboto';
+
+// Import Bootstrap variables
+@import './variables';
+
+// Import Bootstrap to apply the changes
+@import 'bootstrap/scss/bootstrap';
+
+// Import other styles
+@import './base';
